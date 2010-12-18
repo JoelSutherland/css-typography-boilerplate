@@ -1,0 +1,191 @@
+/*
+    gethifi.com - CSS Type Boilerplate
+    2010-11-12
+    v. 0.9
+    Author:Joel Sutherland (@JoelSutherland)
+    Liscenced under the MIT license
+
+    Type and Type Baseline
+    This stylesheet is designed to set up all text elements on a type baseline.
+    Using it ensures element coverage and ideally, clean type.
+   
+     Setup Instructions
+      *  ".content" is in front of all declarations.  This is so that it can
+         target only elements in a .content container.  Search/Replace to
+         change or eliminate.  It's probably best to eliminate so that you can
+         ensure this is used globally.
+      *  The default baseline is 20px.  Search/Replace 20px to adjust.
+      *  Once this is adjusted, it's also important to check the headers
+*/
+
+/* Baseline Debugging Backgrounds */
+.showBaseline {
+    background: url(../images/baseline-20.png);
+}
+.showBaseline h1, .showBaseline h2, .showBaseline h3, .showBaseline h4, .showBaseline h5, .showBaseline h6,
+.showBaseline p, .showBaseline ul, .showBaseline ol, .showBaseline pre, .showBaseline blockquote {
+    background: rgba(255,200,200,.3);
+}
+
+
+
+/* Standard Text */
+.content, .content input {
+    font: normal 12px/20px arial,sans-serif;
+    color: #555;
+}
+
+
+/* Block Baselines */
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6,
+.content p, .content ul, .content ol, .content pre, .content blockquote,
+.content textarea, .content button {
+    margin-bottom: 20px;
+}
+img { display: block; }
+
+
+
+/* Headers */
+.content h1,.content h2,.content h3,.content h4,.content h5,.content h6 {
+    text-rendering: optimizeLegibility; /* optional - helps kerning in some browsers */
+    font-family: georgia,serif;
+    font-weight: normal;
+    color: #39619e;
+}
+.content h1, .content h1 a {
+    font-size: 30px;
+    line-height: 40px;
+}
+.content h2 {
+    font-size: 24px;
+    line-height: 20px;
+}
+.content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.content h4 { 
+    font-size: 16px;
+    font-weight: bold;
+}
+.content h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.content h6 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+
+
+/* Paragraph Elements */
+.content a:link {
+    color: #375493;
+    text-decoration: underline;
+}
+.content a:active {
+    background: #ccd5e2;
+    text-decoration: underline;
+}
+.content a:hover {
+    background: #ccd5e2;
+    text-decoration: none;
+}
+.content a:visited {
+    color: black;
+    text-decoration: underline;
+}
+.content sup, .content sub {
+    font-size: 80%;
+    line-height: 0;
+}
+.content sup {
+    vertical-align: super;
+}
+.content sub {
+    vertical-align: sub;
+}
+.content code {
+    font-family: Consolas, "Courier New", Courier, mono;
+}
+
+
+
+/* Block Elements */
+.content ul , .content ol{
+    margin-left: 20px;
+}
+.content blockquote {
+    display: block;
+    background: #eee;
+    background: rgba(0,0,0,.05);
+    border-left: 4px solid;
+    border-left-color: #ccc;
+    border-left-color:  rgba(0,0,0,.1);
+    padding: 10px;
+    font-style: italic;
+}
+    .content blockquote p:last-child {
+        margin-bottom: 0;
+    }
+.content pre {
+    font-family: Consolas, "Courier New", Courier, mono;
+    background: black;
+    background: rgba(0,0,0,.8);
+    color: #eee;
+    padding: 10px 20px;
+}
+
+
+
+/* Forms */
+.content form { 
+}
+    .content form p {
+        margin: 0;
+    }
+.content label {
+    display: block;
+    margin-bottom: 0;
+}
+.content input, .content textarea, .content select {
+    display: block;
+    margin: 4px 0 24px 0;
+}
+.content input[type=text], .content input[type=email], .content input[type=url], .content textarea {
+    width: 400px;
+    border: 1px solid;
+    border-color: #ccc;
+    border-color: rgba(0,0,0,.1);
+    height: 30px;
+    background: #fff;
+    background: rgba(255,255,255,.8);
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.content textarea {
+    height: 150px; 
+    width: 450px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.content label.error {
+    width: 400px;
+    text-align: right;
+    color: #aa0000;
+}
+.content label.error:before {
+    content: "▲ ";
+}
+.content input.error, .content textarea.error {
+    border-color: #aa0000;
+}

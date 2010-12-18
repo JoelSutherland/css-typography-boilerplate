@@ -1,0 +1,11 @@
+/* CORE ELEMENTS */
+
+html, body{ background: #eee; }
+body {
+	color: #555555;
+	font: 12px/20px Helvetica, Arial, Verdana, sans-serif;
+	text-align: center;
+}
+
+
+
